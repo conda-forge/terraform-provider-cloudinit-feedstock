@@ -1,6 +1,6 @@
 {% set provider = "cloudinit" %}
 {% set goname = "github.com/hashicorp/terraform-provider-"+provider.lower() %}
-{% set version = "2.4.0" %}
+{% set version = "2.4.1" %}
 
 {% set name = goname.split('/')[-1] %}
 
@@ -13,7 +13,7 @@ package:
 
 source:
   url: https://{{ goname }}/archive/v{{ version }}.tar.gz
-  sha256: 3afdcaf3814245b5415117c25f6da5ad0e8d76b68c037a0273a8acdbb21ff214
+  sha256: 56d6f6180b31b9d83f8b4947858e9d2ae05d9af5306eabbbaafe4da8b5e24171
 
 build:
   number: 0
